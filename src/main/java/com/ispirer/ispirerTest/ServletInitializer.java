@@ -1,4 +1,4 @@
-package com.ispirer.IspirerTest;
+package com.ispirer.ispirerTest;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
