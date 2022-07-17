@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<div th:insert="fragments :: head"></div>
+<body>
+<div th:insert="fragments :: nav"></div>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <h1 th:text="#{lang.list}"></h1>
+            <form method="post">
+                <button type="submit" class="btn btn-primary mb-5" th:text="#{lang.list_button}"></button>
+            </form>
+            <h3 class="mt-5">isChanged status</h3>
+            <h3 th:text="${isChanged}"></h3>
+            <h6 class="mt-5">ID</h6>
+            <tr th:each="obj : ${objList}">
+                <td th:text="${obj.id}"></td>
+            </tr>
+        </div>
+        <div class="col">
+            <h2 th:text="#{lang.list_title}">Text</h2>
+            <p th:text="#{lang.list_description}">More Text</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
