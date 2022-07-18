@@ -14,10 +14,12 @@
             </form>
             <h3 class="mt-5">isChanged status</h3>
             <h3 th:text="${isChanged}"></h3>
+
             <h6 class="mt-5">ID</h6>
             <tr th:each="obj : ${objList}">
-                <td th:text="${obj.id}"></td>
+                <td th:text="${obj.idCopy}"></td>
             </tr>
+
         </div>
         <div class="col">
             <h2 th:text="#{lang.list_title}">Text</h2>
